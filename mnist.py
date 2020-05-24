@@ -65,7 +65,7 @@ def model_train(epoch,n):
     score = model.evaluate(x_test, y_test, verbose=0)
     a=score[1]*100
     model.save("mnist.h5")
-    os.system("mv /mnist.h5 /task3")
+    os.system("mv /mnist.h5 /root/")
     return a
 
 no_epoch=1
@@ -74,4 +74,4 @@ accuracy_train_model=model_train(no_epoch,no_layer)
 f = open("accuracy.txt","w+")
 f.write(str(accuracy_train_model))
 f.close()
-os.system("mv /accuracy.txt /task3")
+os.system("mv /accuracy.txt /root/")
