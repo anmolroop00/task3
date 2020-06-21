@@ -8,8 +8,8 @@ from keras import backend as K
 import os
 
 def model_train(epoch,n):
-    batch_size = 55
-    num_classes = 20
+    batch_size = 50
+    num_classes = 30
     epochs = epoch
 
     # input image dimensions
