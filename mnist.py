@@ -9,7 +9,6 @@ import os
 
 def model_train(epoch,n):
     batch_size = 40
-#32
     num_classes = 10
     epochs = epoch
 
@@ -69,7 +68,7 @@ def model_train(epoch,n):
     os.system("mv /mnist.h5 /root/")
     return a
 
-no_epoch=2
+no_epoch=1
 no_layer=1
 accuracy_train_model=model_train(no_epoch,no_layer)
 f = open("accuracy.txt","w+")
