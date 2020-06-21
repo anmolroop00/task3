@@ -8,7 +8,7 @@ from keras import backend as K
 import os
 
 def model_train(epoch,n):
-    batch_size = 40
+    batch_size = 50
     num_classes = 10
     epochs = epoch
 
