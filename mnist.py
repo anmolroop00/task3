@@ -9,7 +9,7 @@ import os
 
 def model_train(epoch,n):
     batch_size = 50
-    num_classes = 10
+    num_classes = 20
     epochs = epoch
 
     # input image dimensions
